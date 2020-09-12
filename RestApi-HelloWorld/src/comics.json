@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nombre": "Action Comics",
+    "graducacionCGC": 123,
+    "tiraje": 12,
+    "reinpresiones": 12
+  },
+  {
+    "id": 2,
+    "nombre": "Amazing Fantasy",
+    "graducacionCGC": 123,
+    "tiraje": 12,
+    "reinpresiones": 12
+  },
+  {
+    "id": 3,
+    "nombre": "Detective Comics",
+    "graducacionCGC": 123,
+    "tiraje": 12,
+    "reinpresiones": 12
+  }
+]
