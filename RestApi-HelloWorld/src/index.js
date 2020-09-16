@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 //Settings
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8090);
 app.set('json spaces', 1);
 //Middlewares
 app.use(morgan('dev'));
@@ -12,6 +12,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 //Routes
+app.get('/', (req, res) => res.send('hello world'));
 //  Aqui definimos los archivos que contendran las rutas a utilizar para la obtencion 
 //  y recepcion de informacion
 app.use(require('./routes/index-routes'));
@@ -20,6 +21,6 @@ app.use(require('./routes/index-routes'));
 app.use('/api/sps/helloworld/v1', require('./routes/comic'));
 
 //Starting server
-app.listen(3000, () => {
+app.listen(8090, () => {
   console.log('Server on port ', app.get("port"));
 });
